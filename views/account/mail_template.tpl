@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>找回密码 - Powered by MinDoc</title>
+    <title>Retrieve Password - Powered by MinDoc</title>
     <style type="text/css">
         .ua-macos::-webkit-scrollbar{ display: none; }
         html,body{background-color: transparent;margin:0;padding: 0;}
@@ -71,23 +71,23 @@
         <br style="clear:both; height:0">
         <div class="content" style="background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #E9E9E9; margin: 2px 0 0; padding: 30px;">
 
-            <p>您好: </p>
+            <p>Dear: </p>
 
-            <p>您在 {{.SITE_NAME}} 提交了找回密码申请。<br>如果您没有提交修改密码的申请, 请忽略本邮件</p>
+            <p>You have commit a request at {{.SITE_NAME}}。<br>If you did not apply any request, please ignore this message</p>
 
             <p style="border-top: 1px solid #DDDDDD;margin: 15px 0 25px;padding: 15px;">
-                请点击链接继续: <a href="{{.url}}" target="_blank">{{.url}}</a>
+                Click to continue: <a href="{{.url}}" target="_blank">{{.url}}</a>
             </p>
             <p>
-                好的密码，不但应该容易记住，还要尽量符合以下强度标准：
+                An appropriate password should contains：
             <ul>
-                <li>包含大小写字母、数字和符号</li>
-                <li>不少于 10 位 </li>
-                <li>不包含生日、手机号码等易被猜出的信息</li>
+                <li>letter in upper and lowercase, number and special symbol</li>
+                <li>more than 10 digits </li>
+                <li>No birth day, cell phone number or any other insecure information</li>
             </ul>
             </p>
             <p class="footer" style="border-top: 1px solid #DDDDDD; padding-top:6px; margin-top:25px; color:#838383;">
-                请勿回复本邮件, 此邮箱未受监控, 您不会得到任何回复. 要获得帮助, 请登录网站<br><br>
+                Do not reply to this e-mail because you can not get anything feedback, if you need help, please refer to the website<br><br>
                 <a href="{{.BaseUrl}}" target="_blank">{{.SITE_NAME}}</a>
             </p>
         </div>

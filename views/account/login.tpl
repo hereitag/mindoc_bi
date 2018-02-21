@@ -7,7 +7,7 @@
     <meta name="renderer" content="webkit" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="SmartWiki" />
-    <title>用户登录 - Powered by MinDoc</title>
+    <title>User Login - Powered by MinDoc</title>
 
     <!-- Bootstrap -->
     <link href="{{cdncss "/static/bootstrap/css/bootstrap.min.css"}}" rel="stylesheet">
@@ -34,13 +34,13 @@
     <div class="row login">
         <div class="login-body">
             <form role="form" method="post">
-                <h3 class="text-center">用户登录</h3>
+                <h3 class="text-center">User Login</h3>
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon">
                             <i class="fa fa-user"></i>
                         </div>
-                        <input type="text" class="form-control" placeholder="用户名" name="account" id="account" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="User" name="account" id="account" autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group">
@@ -48,7 +48,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-lock"></i>
                         </div>
-                        <input type="password" class="form-control" placeholder="密码" name="password" id="password" autocomplete="off">
+                        <input type="password" class="form-control" placeholder="Password" name="password" id="password" autocomplete="off">
                     </div>
                 </div>
                 {{if .ENABLED_CAPTCHA }}
@@ -58,26 +58,26 @@
                         <div class="input-group-addon">
                             <i class="fa fa-check-square"></i>
                         </div>
-                        <input type="text" name="code" id="code" class="form-control" style="width: 150px" maxlength="5" placeholder="验证码" autocomplete="off">&nbsp;
+                        <input type="text" name="code" id="code" class="form-control" style="width: 150px" maxlength="5" placeholder="Verification Code" autocomplete="off">&nbsp;
                     </div>
-                    <img id="captcha-img" style="width: 140px;height: 40px;display: inline-block;float: right" src="{{urlfor "AccountController.Captcha"}}" onclick="this.src='{{urlfor "AccountController.Captcha"}}?key=login&t='+(new Date()).getTime();" title="点击换一张">
+                    <img id="captcha-img" style="width: 140px;height: 40px;display: inline-block;float: right" src="{{urlfor "AccountController.Captcha"}}" onclick="this.src='{{urlfor "AccountController.Captcha"}}?key=login&t='+(new Date()).getTime();" title="Click to change">
                     <div class="clearfix"></div>
                 </div>
                 {{end}}
                 {{end}}
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" name="is_remember" value="yes"> 保持登录
+                        <input type="checkbox" name="is_remember" value="yes"> Remember Me
                     </label>
-                    <a href="{{urlfor "AccountController.FindPassword" }}" style="display: inline-block;float: right">忘记密码？</a>
+                    <a href="{{urlfor "AccountController.FindPassword" }}" style="display: inline-block;float: right">Forgot Password？</a>
                 </div>
                 <div class="form-group">
-                    <button type="button" id="btn-login" class="btn btn-success" style="width: 100%"  data-loading-text="正在登录..." autocomplete="off">立即登录</button>
+                    <button type="button" id="btn-login" class="btn btn-success" style="width: 100%"  data-loading-text="Logining in ..." autocomplete="off">Login</button>
                 </div>
                 {{if .ENABLED_REGISTER}}
                 {{if ne .ENABLED_REGISTER "false"}}
                 <div class="form-group">
-                    还没有账号？<a href="{{urlfor "AccountController.Register" }}" title="立即注册">立即注册</a>
+                    Do not have an account？<a href="{{urlfor "AccountController.Register" }}" title="Register">Register</a>
                 </div>
                 {{end}}
                 {{end}}
@@ -112,19 +112,19 @@
             var code = $("#code").val();
 
             if (account === "") {
-                $("#account").tooltip({ placement: "auto", title: "账号不能为空", trigger: 'manual' })
+                $("#account").tooltip({ placement: "auto", title: "Username can not be empty", trigger: 'manual' })
                     .tooltip('show')
                     .parents('.form-group').addClass('has-error');
                 $btn.button('reset');
                 return false;
             } else if (password === "") {
-                $("#password").tooltip({ title: '密码不能为空', trigger: 'manual' })
+                $("#password").tooltip({ title: 'Password can not be empty', trigger: 'manual' })
                     .tooltip('show')
                     .parents('.form-group').addClass('has-error');
                 $btn.button('reset');
                 return false;
             } else if (code !== undefined && code === "") {
-                $("#code").tooltip({ title: '验证码不能为空', trigger: 'manual' })
+                $("#code").tooltip({ title: 'Verification code can not be empty', trigger: 'manual' })
                     .tooltip('show')
                     .parents('.form-group').addClass('has-error');
                 $btn.button('reset');
@@ -152,7 +152,7 @@
                     error: function () {
                         $("#captcha-img").click();
                         $("#code").val('');
-                        layer.msg('系统错误');
+                        layer.msg('System Error');
                         $btn.button('reset');
                     }
                 });

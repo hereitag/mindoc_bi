@@ -7,7 +7,7 @@
     <meta name="renderer" content="webkit" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="SmartWiki" />
-    <title>用户登录 - Powered by MinDoc</title>
+    <title>User Login - Powered by MinDoc</title>
 
     <!-- Bootstrap -->
     <link href="{{cdncss "/static/bootstrap/css/bootstrap.min.css"}}" rel="stylesheet">
@@ -34,13 +34,13 @@
     <div class="row login">
         <div class="login-body">
             <form role="form" method="post" id="registerForm">
-                <h3 class="text-center">用户注册</h3>
+                <h3 class="text-center">User Register</h3>
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon">
                             <i class="fa fa-user"></i>
                         </div>
-                        <input type="text" class="form-control" placeholder="用户名" name="account" id="account" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Username" name="account" id="account" autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group">
@@ -48,7 +48,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-lock"></i>
                         </div>
-                        <input type="password" class="form-control" placeholder="密码" name="password1" id="password1" autocomplete="off">
+                        <input type="password" class="form-control" placeholder="Password" name="password1" id="password1" autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group">
@@ -56,13 +56,13 @@
                         <div class="input-group-addon">
                             <i class="fa fa-lock"></i>
                         </div>
-                        <input type="password" class="form-control" placeholder="确认密码" name="password2" id="password2" autocomplete="off">
+                        <input type="password" class="form-control" placeholder="Confirm Password" name="password2" id="password2" autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon" style="padding: 6px 9px;"><i class="fa fa-envelope"></i></div>
-                        <input type="email" class="form-control" placeholder="用户邮箱" name="email" id="email" autocomplete="off">
+                        <input type="email" class="form-control" placeholder="E-mail" name="email" id="email" autocomplete="off">
                     </div>
                 </div>
 
@@ -71,18 +71,18 @@
                         <div class="input-group-addon">
                             <i class="fa fa-check-square"></i>
                         </div>
-                        <input type="text" name="code" id="code" class="form-control" style="width: 150px" maxlength="5" placeholder="验证码" autocomplete="off">&nbsp;
+                        <input type="text" name="code" id="code" class="form-control" style="width: 150px" maxlength="5" placeholder="Verification Code" autocomplete="off">&nbsp;
                     </div>
-                    <img id="captcha-img" style="width: 140px;height: 40px;display: inline-block;float: right" src="{{urlfor "AccountController.Captcha"}}" onclick="this.src='{{urlfor "AccountController.Captcha"}}?key=login&t='+(new Date()).getTime();" title="点击换一张">
+                    <img id="captcha-img" style="width: 140px;height: 40px;display: inline-block;float: right" src="{{urlfor "AccountController.Captcha"}}" onclick="this.src='{{urlfor "AccountController.Captcha"}}?key=login&t='+(new Date()).getTime();" title="Click to change">
                     <div class="clearfix"></div>
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" id="btnRegister" class="btn btn-success" style="width: 100%"  data-loading-text="正在注册..." autocomplete="off">立即注册</button>
+                    <button type="submit" id="btnRegister" class="btn btn-success" style="width: 100%"  data-loading-text="Registering..." autocomplete="off">Register</button>
                 </div>
                 {{if ne .ENABLED_REGISTER "false"}}
                 <div class="form-group">
-                    已有账号？<a href="{{urlfor "AccountController.Login" }}" title="立即登录">立即登录</a>
+                    Have an account？<a href="{{urlfor "AccountController.Login" }}" title="Login">Login</a>
                 </div>
                 {{end}}
             </form>
@@ -116,28 +116,28 @@
                 var email = $.trim($("#email").val());
 
                 if(account === ""){
-                    $("#account").focus().tooltip({placement:"auto",title : "账号不能为空",trigger : 'manual'})
+                    $("#account").focus().tooltip({placement:"auto",title : "Username can not be empty",trigger : 'manual'})
                         .tooltip('show')
                         .parents('.form-group').addClass('has-error');
                     return false;
 
                 }else if(password === ""){
-                    $("#password").focus().tooltip({title : '密码不能为空',trigger : 'manual'})
+                    $("#password").focus().tooltip({title : 'Password can not be empty',trigger : 'manual'})
                         .tooltip('show')
                         .parents('.form-group').addClass('has-error');
                     return false;
                 }else if(confirmPassword !== password){
-                    $("#confirm_password").focus().tooltip({title : '确认密码不正确',trigger : 'manual'})
+                    $("#confirm_password").focus().tooltip({title : 'Passwords are not equal',trigger : 'manual'})
                         .tooltip('show')
                         .parents('.form-group').addClass('has-error');
                     return false;
                 }else if(email === ""){
-                    $("#email").focus().tooltip({title : '邮箱不能为空',trigger : 'manual'})
+                    $("#email").focus().tooltip({title : 'Email can not be empty',trigger : 'manual'})
                         .tooltip('show')
                         .parents('.form-group').addClass('has-error');
                     return false;
                 }else if(code !== undefined && code === ""){
-                    $("#code").focus().tooltip({title : '验证码不能为空',trigger : 'manual'})
+                    $("#code").focus().tooltip({title : 'Verification code can not be empty',trigger : 'manual'})
                         .tooltip('show')
                         .parents('.form-group').addClass('has-error');
                     return false;

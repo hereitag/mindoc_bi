@@ -1,0 +1,59 @@
+MinDoc version => v0.8.1
+build time => Mon Feb  5 06:01:38 UTC 2018
+start directory => ./mindoc_linux_amd64
+
+2018/02/21 22:56:12.488 [1;34m[I] [asm_amd64.s:2337] http server Running on http://:8181[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] the request url is  /login[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] Handler crashed with error can't find templatefile in the path:/home/logic_despair/mindoc_en/views/account/login.tpl[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:509[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/panic.go:491[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/template.go:73[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:263[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:214[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:194[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/router.go:856[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:2619[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:1801[0m
+2018/02/21 22:56:15.271 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:2337[0m
+2018/02/21 22:56:18.685 [1;44m[D] [server.go:2619] ::1 - - [21/Feb/2018 10:56:18] "GET / HTTP/1.1 302 0" 0.006824  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.30 Safari/537.36
+[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] the request url is  /login[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] Handler crashed with error can't find templatefile in the path:/home/logic_despair/mindoc_en/views/account/login.tpl[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:509[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/panic.go:491[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/template.go:73[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:263[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:214[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:194[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/router.go:856[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:2619[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:1801[0m
+2018/02/21 22:56:18.700 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:2337[0m
+2018/02/21 22:56:21.433 [1;44m[D] [server.go:2619] ::1 - - [21/Feb/2018 10:56:21] "GET / HTTP/1.1 302 0" 0.005481  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.30 Safari/537.36
+[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] the request url is  /login[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] Handler crashed with error can't find templatefile in the path:/home/logic_despair/mindoc_en/views/account/login.tpl[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:509[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/panic.go:491[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/template.go:73[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:263[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:214[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:194[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/router.go:856[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:2619[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:1801[0m
+2018/02/21 22:56:21.448 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:2337[0m
+2018/02/21 22:56:46.179 [1;44m[D] [server.go:2619] ::1 - - [21/Feb/2018 10:56:46] "GET / HTTP/1.1 302 0" 0.006085  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.30 Safari/537.36
+[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] the request url is  /login[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] Handler crashed with error can't find templatefile in the path:/home/logic_despair/mindoc_en/views/account/login.tpl[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:509[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/panic.go:491[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/template.go:73[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:263[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:214[0m
+2018/02/21 22:56:46.192 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/controller.go:194[0m
+2018/02/21 22:56:46.193 [1;35m[C] [asm_amd64.s:509] /home/travis/gopath/src/github.com/lifei6671/mindoc/vendor/github.com/astaxie/beego/router.go:856[0m
+2018/02/21 22:56:46.193 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:2619[0m
+2018/02/21 22:56:46.193 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/net/http/server.go:1801[0m
+2018/02/21 22:56:46.193 [1;35m[C] [asm_amd64.s:509] /home/travis/.gimme/versions/go1.9.2.linux.amd64/src/runtime/asm_amd64.s:2337[0m
